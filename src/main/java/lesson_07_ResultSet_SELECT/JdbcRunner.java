@@ -13,7 +13,7 @@ public class JdbcRunner {
              var statement = connection.createStatement()) {
 
             ResultSet resultSet = statement.executeQuery(sql);
-            System.out.println(resultSet+"\n--------------------------------");
+            System.out.println(resultSet + "\n--------------------------------");
             while (resultSet.next()) {
                 System.out.println(resultSet.getLong("id"));
                 System.out.println(resultSet.getString("passenger_no"));
